@@ -14,9 +14,6 @@ http {
     #keepalive_timeout  0;
     keepalive_timeout  65;
 
-    include mime.types;
-    default_type application/octet-stream;
-
     # Enable Gzip compression.
     gzip on;
     gzip_http_version 1.0;
