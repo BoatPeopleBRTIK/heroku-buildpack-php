@@ -81,6 +81,8 @@ http {
         
         include "<?=getenv('HEROKU_PHP_NGINX_CONFIG_INCLUDE')?>";
         
+        client_max_body_size 32M;
+        
         # restrict access to hidden files, just in case
         location ~ /\. {
             deny all;
